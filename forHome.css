@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "times new romans";
+}
+
+body {
+    height: 80vh;
+}
+
+
+nav {
+    position: fixed;
+    background-color: '';
+    width: 100%;
+    padding: 10px 0;
+    z-index: 12;
+}
+
+nav .menu {
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+nav .menu .logo a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.menu ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu ul li {
+    margin-left: 7px;
+}
+
+.menu ul li:first-child {
+    margin-left: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background-color: #fff;
+    color: #000000;
+}
+
+.img {
+    background: url('IMG_0214.JPG') ;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    animation: ChangeBackground 10s infinite alternate;
+}
+
+.img::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.center {
+    position: relative;
+    top: -17rem;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.center .title {
+    color: #f5f5f5;
+    font-size: 35px;
+    font-weight: 300;
+    position: relative;
+    top: 4rem;
+}
+
+.Mission {
+    position: relative;
+    top: 5rem;
+    left: -7rem;
+}
+
+.Gloire {
+    position: relative;
+    bottom: 5rem;
+    left: 5rem;
+}
+
+p {
+    font-size: 55px;
+    color: #ffffff;
+    width: 90%;
+    
+}
+
+.center .sub_title {
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: 300;
+    position: relative;
+    left: 17.5rem;
+}
+
+.center .btns {
+    margin-top: 20px;
+    position: relative;
+    left: 17rem;
+}
+
+.center .btns button {
+     height: 55px;
+     width: 170px;
+     border-radius: 5px;
+     border: none;
+     margin: 0 10px;
+     border: 2px solid #fff;
+     font-size: 20px;
+     font-weight: 500;
+     padding: 0 10px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+}
+
+.center .btns button:first-child {
+     color: #fff;
+     background: none;
+}
+
+.center .btns button:last-child {
+    color: #fff;
+    background: none;
+}
+
+.center .btns button:first-child:hover {
+    color: black;
+    background: #fff;
+}
+
+.center .btns button:last-child:hover {
+    color: black;
+    background: #fff;
+}
+
+@keyframes ChangeBackground {
+    0% {
+        background-image: url('IMG_0219.JPG');
+    }
+    33.33% {
+        background-image: url('DSC09672.JPG');
+    }
+    66.66% {
+        background-image: url('IMG_0230.JPG');
+    }
+    100% {
+        background-image: url('IMG_0234.JPG');
+    }
+}
+
+.Nvision {
+    background-color: #0000008e ;
+    width: 100%;
+    height: 125vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    bottom: 32.7rem;
+
+}
+
+.Nvision::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.Vision {
+    text-align: center;
+    position: relative;
+    color: rgb(255, 255, 255);
+    top: 14rem;
+    font-size: 30px;
+}
+
+.Nmessage {
+    background: url('./IMG_0390.JPG');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: -46.1rem;
+}
+
+.Message {
+    text-align: center ;
+    position: relative;
+    color: rgb(66, 66, 66);
+    font-size: 40px;
+    top: 5rem;
+    left: 9rem;
+    width: 100vh;
+}
+
+strong {
+    color: yellow;
+    text-decoration: underline;
+    font-size: 50px;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    bottom: 46rem;
+}
